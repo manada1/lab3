@@ -1,4 +1,9 @@
 ---
+eureka:
+   client:
+        serviceUrl:
+            defaultZone:    http://localhost:8010/eureka
+---
 spring:
   profiles: subject
 pronouns.words: I,You,He,She,It
@@ -23,8 +28,3 @@ spring:
   profiles: noun
 pronouns.words: boat,book,vote,seat,backpack,partition,groundhog  
 
----
-eureka:
-   client:
-        serviceUrl:
-            defaultZone:    http://localhost:8010/eureka
